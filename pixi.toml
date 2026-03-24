@@ -1,0 +1,10 @@
+[workspace]
+authors = ["carp-x <liyuxin_2016@163.com>"]
+channels = ["conda-forge"]
+name = "quad_isaac_train"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
