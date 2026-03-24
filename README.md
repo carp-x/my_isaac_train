@@ -1,1 +1,1 @@
-# quad_rl
+# quad_isaac_lab
