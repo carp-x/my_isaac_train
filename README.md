@@ -1,1 +1,1 @@
-# quad_isaac_lab
+# quad_isaac_train
