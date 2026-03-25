@@ -5,12 +5,12 @@
 
 from isaaclab.utils import configclass
 
-from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+from .velocity_env_cfg import LocomotionVelocityRoughEnvCfg
 
 ##
 # Pre-defined configs
 ##
-from isaaclab_assets.robots.anymal import ANYMAL_C_CFG  # isort: skip
+from quad_isaac.configs.anymal_c import ANYMAL_C_CFG  # isort: skip
 
 
 @configclass

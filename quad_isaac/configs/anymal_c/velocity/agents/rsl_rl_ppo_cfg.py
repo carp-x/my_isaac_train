@@ -15,7 +15,7 @@ class AnymalCRoughPPORunnerCfg(RslRlOnPolicyRunnerCfg):
     num_steps_per_env = 24
     max_iterations = 1500
     save_interval = 50
-    experiment_name = "anymal_c_rough"
+    experiment_name = "my_anymal_c_rough"
     policy = RslRlPpoActorCriticCfg(
         init_noise_std=1.0,
         actor_obs_normalization=False,
@@ -46,7 +46,7 @@ class AnymalCFlatPPORunnerCfg(AnymalCRoughPPORunnerCfg):
         super().__post_init__()
 
         self.max_iterations = 300
-        self.experiment_name = "anymal_c_flat"
+        self.experiment_name = "my_anymal_c_flat"
         self.policy.actor_hidden_dims = [128, 128, 128]
         self.policy.critic_hidden_dims = [128, 128, 128]
 

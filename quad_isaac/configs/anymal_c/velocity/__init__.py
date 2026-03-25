@@ -12,57 +12,49 @@ from . import agents
 ##
 
 gym.register(
-    id="Isaac-Velocity-Flat-Anymal-C-v0",
+    id="My-Velocity-Flat-Anymal-C-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalCFlatEnvCfg",
-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerCfg",
-        "rsl_rl_with_symmetry_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerWithSymmetryCfg",
-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_flat_ppo_cfg.yaml",
-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+        "env_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.flat_env_cfg:AnymalCFlatEnvCfg",
+        "rsl_rl_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerCfg",
+        "rsl_rl_with_symmetry_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerWithSymmetryCfg",
     },
 )
 
 gym.register(
-    id="Isaac-Velocity-Flat-Anymal-C-Play-v0",
+    id="My-Velocity-Flat-Anymal-C-Play-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:AnymalCFlatEnvCfg_PLAY",
-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerCfg",
-        "rsl_rl_with_symmetry_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerWithSymmetryCfg",
-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_flat_ppo_cfg.yaml",
-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_flat_ppo_cfg.yaml",
+        "env_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.flat_env_cfg:AnymalCFlatEnvCfg_PLAY",
+        "rsl_rl_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerCfg",
+        "rsl_rl_with_symmetry_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCFlatPPORunnerWithSymmetryCfg",
     },
 )
 
 gym.register(
-    id="Isaac-Velocity-Rough-Anymal-C-v0",
+    id="My-Velocity-Rough-Anymal-C-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalCRoughEnvCfg",
-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerCfg",
+        "env_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.rough_env_cfg:AnymalCRoughEnvCfg",
+        "rsl_rl_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerCfg",
         "rsl_rl_with_symmetry_cfg_entry_point": (
-            f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerWithSymmetryCfg"
+            "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerWithSymmetryCfg"
         ),
-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_rough_ppo_cfg.yaml",
-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
     },
 )
 
 gym.register(
-    id="Isaac-Velocity-Rough-Anymal-C-Play-v0",
+    id="My-Velocity-Rough-Anymal-C-Play-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:AnymalCRoughEnvCfg_PLAY",
-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerCfg",
+        "env_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.rough_env_cfg:AnymalCRoughEnvCfg_PLAY",
+        "rsl_rl_cfg_entry_point": "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerCfg",
         "rsl_rl_with_symmetry_cfg_entry_point": (
-            f"{agents.__name__}.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerWithSymmetryCfg"
+            "quad_isaac.configs.anymal_c.velocity.agents.rsl_rl_ppo_cfg:AnymalCRoughPPORunnerWithSymmetryCfg"
         ),
-        "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_rough_ppo_cfg.yaml",
-        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_rough_ppo_cfg.yaml",
     },
 )
