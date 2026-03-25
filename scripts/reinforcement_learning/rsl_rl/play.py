@@ -59,6 +59,12 @@ from packaging import version
 
 installed_version = metadata.version("rsl-rl-lib")
 
+
+"""DIY Tasks."""
+import quad_isaac.configs.anymal_c.velocity
+import quad_isaac.configs.anymal_c.navigation
+
+
 """Rest everything follows."""
 
 import os
