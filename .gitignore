@@ -4,3 +4,8 @@
 
 logs
 outputs
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
