@@ -17,7 +17,7 @@ starlette = ">=0.40.0, <0.46.0"
 usd-core = ">=25.2.post1, <26.0"
 
 [activation]
-scripts = ["activation.sh"]
+scripts = ["development/pixi/activation.sh"]
 
 [tasks]
 
