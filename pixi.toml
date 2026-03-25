@@ -1,10 +1,20 @@
 [workspace]
-authors = ["carp-x <liyuxin_2016@163.com>"]
-channels = ["conda-forge"]
 name = "quad_isaac_train"
+authors = ["carp-x <liyuxin_2016@163.com>"]
+channels = ["conda-forge", "pytorch"]
 platforms = ["linux-64"]
-version = "0.1.0"
+version = "0.0.0"
+
+[dependencies]
+python = "3.11.*"
+pip = ">=23.0"
+ninja = "*"
+
+lxml = ">=4.9.2, <5.0.0"
+starlette = ">=0.40.0, <0.46.0"
+
+[pypi-dependencies]
+usd-core = ">=25.2.post1, <26.0"
 
 [tasks]
 
-[dependencies]
