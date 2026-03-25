@@ -20,4 +20,10 @@ usd-core = ">=25.2.post1, <26.0"
 scripts = ["development/pixi/activation.sh"]
 
 [tasks]
-
+# train
+train = "python scripts/reinforcement_learning/rsl_rl/train.py --task Isaac-Velocity-Rough-Anymal-C-v0 --num_envs 2048 --headless"
+train_debug = "python scripts/reinforcement_learning/rsl_rl/train.py --task Isaac-Velocity-Rough-Anymal-C-v0 --num_envs 128 --headless"
+# play
+play = "python scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Velocity-Rough-Anymal-C-v0 --num_envs 1"
+# monitor
+monitor = "tensorboard --logdir=logs/rsl_rl/anymal_c_rough"
