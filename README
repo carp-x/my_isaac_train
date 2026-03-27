@@ -48,6 +48,7 @@ python scripts/tutorials/00_sim/create_empty.py
 # --- STEP 4: Run Training ---
 cd ~/test/my_isaac_train
 pixi run train_debug
+pixi run monitor
 pixi run play_debug
 
 ###############################################################################
