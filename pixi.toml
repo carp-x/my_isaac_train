@@ -1,5 +1,5 @@
 [workspace]
-name = "quad_isaac_train"
+name = "my_isaac_train"
 authors = ["carp-x <liyuxin_2016@163.com>"]
 channels = ["conda-forge", "pytorch"]
 platforms = ["linux-64"]
