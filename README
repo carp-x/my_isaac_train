@@ -20,35 +20,35 @@
 ### [SETUP STEPS] ###
 
 # --- STEP 1: Isaac Sim Installation ---
-  mkdir -p ~/third_party/
-  mv isaac-sim-standalone-5.1.0-linux-x86_64 ~/third_party/
-  ln -s isaac-sim-standalone-5.1.0-linux-x86_64 isaac-sim
+mkdir -p ~/third_party/
+mv isaac-sim-standalone-5.1.0-linux-x86_64 ~/third_party/
+ln -s isaac-sim-standalone-5.1.0-linux-x86_64 isaac-sim
 [Test]
-  cd ~/third_party/isaac-sim
-  ./isaac-sim.sh
-  ./python.sh -c "print('Isaac Sim configuration is now complete.')"
-  ./python.sh standalone_examples/api/isaacsim.core.api/add_cubes.py
+cd ~/third_party/isaac-sim
+./isaac-sim.sh
+./python.sh -c "print('Isaac Sim configuration is now complete.')"
+./python.sh standalone_examples/api/isaacsim.core.api/add_cubes.py
 
 # --- STEP 2: Pixi Project Setup ---
-  mkdir -p ~/test && cd ~/test
-  git clone git@github.com:carp-x/my_isaac_train.git
-  cd my_isaac_train
-  pixi shell
+mkdir -p ~/test && cd ~/test
+git clone git@github.com:carp-x/my_isaac_train.git
+cd my_isaac_train
+pixi shell
 
 # --- STEP 3: Isaac Lab Setup ---
-  cd ~/third_party
-  git clone https://github.com/isaac-sim/IsaacLab.git
-  cd isaac-lab
-  ln -s ~/third_party/isaac-sim _isaac_sim
-  ./isaaclab.sh --install
-  pixi install # Fix lxml && starlette && usd-core compatibility issue
+cd ~/third_party
+git clone https://github.com/isaac-sim/IsaacLab.git
+cd isaac-lab
+ln -s ~/third_party/isaac-sim _isaac_sim
+./isaaclab.sh --install
+pixi install # Fix lxml && starlette && usd-core compatibility issue
 [Test]
-  python scripts/tutorials/00_sim/create_empty.py
+python scripts/tutorials/00_sim/create_empty.py
 
 # --- STEP 4: Run Training ---
-  cd ~/test/my_isaac_train
-  pixi run train_debug
-  pixi run play_debug
+cd ~/test/my_isaac_train
+pixi run train_debug
+pixi run play_debug
 
 ###############################################################################
 #                                 END OF FILE                                 #
