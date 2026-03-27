@@ -38,7 +38,7 @@ pixi shell
 # --- STEP 3: Isaac Lab Setup ---
 cd ~/third_party
 git clone https://github.com/isaac-sim/IsaacLab.git
-cd isaac-lab
+cd IsaacLab
 ln -s ~/third_party/isaac-sim _isaac_sim
 ./isaaclab.sh --install
 pixi install # Fix lxml && starlette && usd-core compatibility issue
