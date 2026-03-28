@@ -28,10 +28,18 @@ play = "python scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Veloci
 # monitor
 monitor = "tensorboard --logdir=logs/rsl_rl/anymal_c_rough"
 
-# train
+# my train rough
 my_train = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 2048 --headless"
 my_train_debug = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 128 --headless"
 # play
 my_play = "python scripts/reinforcement_learning/rsl_rl/play.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 1"
 # monitor
 my_monitor = "tensorboard --logdir=logs/rsl_rl/my_anymal_c_rough"
+
+# my train flat
+my_train_flat = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Flat-Anymal-C-v0 --num_envs 2048 --headless"
+my_train_debug_flat = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Flat-Anymal-C-v0 --num_envs 128 --headless"
+# play
+my_play_flat = "python scripts/reinforcement_learning/rsl_rl/play.py --task My-Velocity-Flat-Anymal-C-v0 --num_envs 1"
+# monitor
+my_monitor_flat = "tensorboard --logdir=logs/rsl_rl/my_anymal_c_flat"
