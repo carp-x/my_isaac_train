@@ -10,7 +10,7 @@ from .velocity_env_cfg import LocomotionVelocityRoughEnvCfg
 ##
 # Pre-defined configs
 ##
-from quad_isaac.configs.anymal_c import ANYMAL_C_CFG  # isort: skip
+from my_isaac.configs.anymal_c import ANYMAL_C_CFG  # isort: skip
 
 
 @configclass

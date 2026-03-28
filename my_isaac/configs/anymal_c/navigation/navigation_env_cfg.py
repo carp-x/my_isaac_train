@@ -15,8 +15,8 @@ from isaaclab.managers import TerminationTermCfg as DoneTerm
 from isaaclab.utils import configclass
 from isaaclab.utils.assets import ISAACLAB_NUCLEUS_DIR
 
-import quad_isaac.mdp.navigation as mdp
-from quad_isaac.configs.anymal_c.velocity.flat_env_cfg import AnymalCFlatEnvCfg
+import my_isaac.mdp.navigation as mdp
+from my_isaac.configs.anymal_c.velocity.flat_env_cfg import AnymalCFlatEnvCfg
 
 LOW_LEVEL_ENV_CFG = AnymalCFlatEnvCfg()
 

@@ -16,8 +16,8 @@ gym.register(
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": "quad_isaac.configs.anymal_c.navigation.navigation_env_cfg:NavigationEnvCfg",
-        "rsl_rl_cfg_entry_point": "quad_isaac.configs.anymal_c.navigation.agents.rsl_rl_ppo_cfg:NavigationEnvPPORunnerCfg",
+        "env_cfg_entry_point": "my_isaac.configs.anymal_c.navigation.navigation_env_cfg:NavigationEnvCfg",
+        "rsl_rl_cfg_entry_point": "my_isaac.configs.anymal_c.navigation.agents.rsl_rl_ppo_cfg:NavigationEnvPPORunnerCfg",
     },
 )
 
@@ -26,7 +26,7 @@ gym.register(
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": "quad_isaac.configs.anymal_c.navigation.navigation_env_cfg:NavigationEnvCfg_PLAY",
-        "rsl_rl_cfg_entry_point": "quad_isaac.configs.anymal_c.navigation.agents.rsl_rl_ppo_cfg:NavigationEnvPPORunnerCfg",
+        "env_cfg_entry_point": "my_isaac.configs.anymal_c.navigation.navigation_env_cfg:NavigationEnvCfg_PLAY",
+        "rsl_rl_cfg_entry_point": "my_isaac.configs.anymal_c.navigation.agents.rsl_rl_ppo_cfg:NavigationEnvPPORunnerCfg",
     },
 )

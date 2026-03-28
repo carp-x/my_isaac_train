@@ -23,7 +23,7 @@ from isaaclab.utils import configclass
 from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR, ISAACLAB_NUCLEUS_DIR
 from isaaclab.utils.noise import AdditiveUniformNoiseCfg as Unoise
 
-import quad_isaac.mdp.velocity as mdp
+import my_isaac.mdp.velocity as mdp
 
 ##
 # Pre-defined configs

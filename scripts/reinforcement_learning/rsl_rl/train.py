@@ -75,8 +75,8 @@ if version.parse(installed_version) < version.parse(RSL_RL_VERSION):
 
 
 """DIY Tasks."""
-import quad_isaac.configs.anymal_c.velocity
-import quad_isaac.configs.anymal_c.navigation
+import my_isaac.configs.anymal_c.velocity
+import my_isaac.configs.anymal_c.navigation
 
 
 """Rest everything follows."""
