@@ -29,17 +29,25 @@ play = "python scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Veloci
 monitor = "tensorboard --logdir=logs/rsl_rl/anymal_c_rough"
 
 # my train rough
-my_train = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 2048 --headless"
-my_train_debug = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 128 --headless"
+my_train_rough = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 2048 --headless"
+my_train_debug_rough = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 128 --headless"
 # play
-my_play = "python scripts/reinforcement_learning/rsl_rl/play.py --task My-Velocity-Rough-Anymal-C-v0 --num_envs 1"
+my_play_rough = "python scripts/reinforcement_learning/rsl_rl/play.py --task My-Velocity-Rough-Anymal-C-Play-v0 --num_envs 1"
 # monitor
-my_monitor = "tensorboard --logdir=logs/rsl_rl/my_anymal_c_rough"
+my_monitor_rough = "tensorboard --logdir=logs/rsl_rl/my_anymal_c_rough"
 
 # my train flat
 my_train_flat = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Flat-Anymal-C-v0 --num_envs 2048 --headless"
-my_train_flat_debug = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Flat-Anymal-C-v0 --num_envs 128 --headless"
+my_train_debug_flat = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Velocity-Flat-Anymal-C-v0 --num_envs 128 --headless"
 # play
-my_play_flat = "python scripts/reinforcement_learning/rsl_rl/play.py --task My-Velocity-Flat-Anymal-C-v0 --num_envs 1"
+my_play_flat = "python scripts/reinforcement_learning/rsl_rl/play.py --task My-Velocity-Flat-Anymal-C-Play-v0 --num_envs 1"
 # monitor
 my_monitor_flat = "tensorboard --logdir=logs/rsl_rl/my_anymal_c_flat"
+
+# my train nav
+my_train_nav = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Navigation-Flat-Anymal-C-v0 --num_envs 2048 --headless"
+my_train_debug_nav = "python scripts/reinforcement_learning/rsl_rl/train.py --task My-Navigation-Flat-Anymal-C-v0 --num_envs 128 --headless"
+# play
+my_play_nav = "python scripts/reinforcement_learning/rsl_rl/play.py --task My-Navigation-Flat-Anymal-C-Play-v0 --num_envs 1"
+# monitor
+my_monitor_nav = "tensorboard --logdir=logs/rsl_rl/my_anymal_c_navigation"
