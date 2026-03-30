@@ -159,6 +159,7 @@ def main(env_cfg: ManagerBasedRLEnvCfg | DirectRLEnvCfg | DirectMARLEnvCfg, agen
 
     # wrap around environment for rsl-rl
     env = RslRlVecEnvWrapper(env, clip_actions=agent_cfg.clip_actions)
+    print(f"[INFO]: Joint names in order: {env.unwrapped.scene['robot'].joint_names}")
 
     print(f"[INFO]: Loading model checkpoint from: {resume_path}")
     # load previously trained model
