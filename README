@@ -18,6 +18,7 @@
 
 ===============================================================================
 ### [SETUP STEPS] ###
+Reference: https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/binaries_installation.html
 
 # --- STEP 1: Isaac Sim Installation ---
 mkdir -p ~/third_party/
